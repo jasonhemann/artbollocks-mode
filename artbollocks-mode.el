@@ -293,11 +293,10 @@ entire buffer, subject to narrowing."
 
 (defconst artbollocks-mode-keymap (make-keymap))
 
-(define-key artbollocks-mode-keymap (kbd "C-c [") 'artbollocks-word-count)
-(define-key artbollocks-mode-keymap (kbd "C-c ]") 'artbollocks-sentence-count)
-(define-key artbollocks-mode-keymap (kbd "C-c \\") 'artbollocks-readability-index)
-(define-key artbollocks-mode-keymap (kbd "C-c /") 'artbollocks-reading-ease)
-(define-key artbollocks-mode-keymap (kbd "C-c =") 'artbollocks-grade-level)
+(define-key artbollocks-mode-keymap (kbd "C-c C-/ 2 e") 'artbollocks-reading-ease)
+(define-key artbollocks-mode-keymap (kbd "C-c C-/ 2 g") 'artbollocks-grade-level)
+(define-key artbollocks-mode-keymap (kbd "C-c C-/ 2 r")  'artbollocks-readability-index)
+(define-key artbollocks-mode-keymap (kbd "C-c C-/ 2 w")  'artbollocks-weasel-count)
 
 ;;;###autoload
 (define-minor-mode artbollocks-mode "Highlight passive voice, weasel words and artbollocks jargon in text, and provide useful text metrics"
